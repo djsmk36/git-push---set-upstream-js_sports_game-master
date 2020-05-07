@@ -40,7 +40,7 @@ teamTwoButton.addEventListener("click", function () {
         console.log("+ team scored")
     }
 })
-//Reset-Button
+//Reset-Button ()
 resetButton.addEventListener("click", function () {
     teamOneShots.innerHTML = 0;
     teamTwoShots.innerHTML = 0;
