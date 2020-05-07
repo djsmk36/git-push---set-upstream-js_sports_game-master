@@ -13,3 +13,11 @@
 #reset-container, h1 {
     text-align: center;
 }
+body{
+    color: #fdb927;
+    background-color:#552583;
+    background-image: url(https://www.staplescenter.com/assets/img/lakers_slideshow-33dda92bb1.jpg);
+}
+function playAudio(url) {
+    new Audio(url).play();
+  }
