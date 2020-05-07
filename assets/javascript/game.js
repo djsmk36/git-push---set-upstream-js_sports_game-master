@@ -48,5 +48,3 @@ resetButton.addEventListener("click", function () {
     teamTwoNumGoals.innerHTML = 0;
 
 })
-
-
