@@ -14,13 +14,19 @@ const teamOneButton = document.querySelector
 const teamOneNumGoals = document.querySelector("#teamone-numgoals")
 
 
+
+
+
 teamOneButton.addEventListener("click", function () {
     console.log("+ button clicked");
     Math.random();
+    
     let teamOneShotsTaken = Number(teamOneShots.innerHTML) + 1;
-    teamOneShots.innerHTML = teamOneShotsTaken
-    if (Math.random() < .5) {
-        console.log("+ team scored")
+            teamOneShots.innerHTML = teamOneShotsTaken
+            if (Math.random() < .5) {
+            console.log("+ team scored")
+            let teamGoals = Number(teamOneNumGoals.innerHTML) + 1;
+            teamOneNumGoals.innerHTML = teamGoals
     }
 
 })
@@ -34,14 +40,21 @@ const teamTwoNumGoals = document.querySelector("#teamtwo-numgoals")
 teamTwoButton.addEventListener("click", function () {
     console.log("+ button clicked");
     Math.random();
+   
     let teamTwoShotsTaken = Number(teamTwoShots.innerHTML) + 1;
-    teamTwoShots.innerHTML = teamTwoShotsTaken
-    if (Math.random() < .5) {
+        teamTwoShots.innerHTML = teamTwoShotsTaken
+        if (Math.random() < .5) {
         console.log("+ team scored")
+        let teamGoals = Number(teamTwoNumGoals.innerHTML) + 1;
+        teamTwoNumGoals.innerHTML = teamGoals
     }
 })
 //Reset-Button ()
+const resetButton = document.querySelector('reset-button')
+
 resetButton.addEventListener("click", function () {
+    console.log("+ button clicked");
+    Math.random();
     teamOneShots.innerHTML = 0;
     teamTwoShots.innerHTML = 0;
     teamOneNumGoals.innerHTML = 0;
